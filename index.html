@@ -15,11 +15,11 @@
 		    opacity: 0;
 		  }
 
-		  40% {
+		  30% {
 		    opacity: 0;
 		  }
 
-		  50% {
+		  40% {
 		  	opacity: 1;
 		  }
 
@@ -33,11 +33,11 @@
 		    opacity: 0;
 		  }
 
-		  50% {
+		  40% {
 		    opacity: 0;
 		  }
 
-		  60% {
+		  50% {
 		  	opacity: 1;
 		  }
 
@@ -51,12 +51,23 @@
 		    opacity: 0;
 		  }
 
+		  70% {
+		    opacity: 0;
+		  }
+
 		  80% {
-		  	opacity: 0;
+		    opacity: 1;
+		    top: 60%
+		  }
+
+		  90% {
+		    opacity: 1;
+		    top: 70%
 		  }
 
 		  100% {
-		    opacity: 1;
+		  	opacity: 1;
+		  	top: 60%
 		  }
 		}
 		@media only screen and (max-device-width: 480px) {
@@ -131,7 +142,7 @@
 				top: 40%;
 				left: 0;
 				width: 100%;
-				top: 60%;
+				top: 40%;
 				z-index: -1;
 			}
     	}
