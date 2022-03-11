@@ -46,6 +46,20 @@
 		  }
 		}
 
+		@keyframes appear_guide {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  80% {
+		  	opacity: 0;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
 		@keyframes appear_arrow {
 		  0% {
 		    opacity: 0;
@@ -114,7 +128,7 @@
 		@media only screen and (max-device-width: 480px) {
 
 			html {
-			  scroll-behavior: smooth;
+				scroll-behavior: smooth;
 			}
 
 			#greeting{
@@ -154,7 +168,7 @@
 				transform: rotate(-180deg);
 				text-decoration: none;
 				font-family: Karla;
-				font-size: 48px;
+				font-size: 10vw;
 				position: absolute;
 				text-align: center;
 				vertical-align: middle;
@@ -166,6 +180,23 @@
 				z-index: -1;
 				animation-duration: 3s;
   				animation-name: appear_arrow;
+			}
+
+			#guide{
+				font-family: Karla;
+				font-size: 3vw;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: #5a5a5a;
+				text-decoration: none;
+				top: 0;
+				left: 0;
+				width: 100%;
+				top: 65%;
+				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_guide;
 			}
 
 			#page{
@@ -251,13 +282,27 @@
 			#spotify{
 				position: absolute;
 				padding: 2%;
-				width: 75%;
+				width: 30%;
 				border: solid black;
 				font-size: 6vw;
 				color: black;
 				text-decoration: none;
 				top: 90%;
 				left: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#pinterest{
+				position: absolute;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 90%;
+				right: 10%;
 				text-align: center;
 				/*background: #808080;*/
 			}
@@ -287,6 +332,11 @@
   				animation-name: button_pressed;
 			}
 
+			#pinterest:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
 			#info_text{
 				font-family: Karla;
 				position: absolute;
@@ -307,7 +357,7 @@
 				vertical-align: middle;
 				color: black;
 				font-size: 5vw;
-				top: 10%;
+				top: 11%;
 				left: 10%;
 				width: 100%;
 				z-index: -1;
@@ -324,17 +374,19 @@
 
 		<!-- <h1 id="arrow">^</h1> -->
 		<a id="arrow" href="#page">^</a>
+
+		<p><a id="guide" href="#page">press to continue</a></p>
 	</div>
 	<div id="page">
 
 		<h1 id="info_text">Info</h1>
 		<table id="info_table">
 			<tr>
-				<td><b>mbti: </b></td>
+				<td><b>mbti:</b></td>
 				<td>intj</td>
 			</tr>
 			<tr>
-				<td><b>sign: </b></td>
+				<td><b>sign:</b></td>
 				<td>scorpio</td>
 			</tr>
 			<tr>
@@ -352,6 +404,14 @@
 			<tr>
 				<td><b>fav actress:</b></td>
 				<td><a href="https://www.imdb.com/name/nm2215143" style="color: black; text-decoration: none;">Kiernan Shipka</a></td>
+			</tr>
+			<tr>
+				<td><b>fav series: </b></td>
+				<td>Outer Banks, You</td>
+			</tr>
+			<tr>
+				<td><b></b></td>
+				<td>Lucifer</td>
 			</tr>
 		</table>
 
@@ -377,6 +437,10 @@
 
 		<div class="socials_button">
 			<a id="spotify" href="https://open.spotify.com/user/nciguul4qvkc0nx1bioe8y9zt?si=Hzk1AF2JTfCu0EGUgOqNZA&utm_source=copy-link">Spotify</a>
+		</div>
+
+		<div class="socials_button">
+			<a id="pinterest" href="https://www.pinterest.com/braaedy4/">Pinterest</a>
 		</div>
 
 		
