@@ -70,6 +70,29 @@
 		  	top: 60%
 		  }
 		}
+
+		@keyframes button_pressed {
+			0% {
+				background-color: #fff;
+				transform: scale(1);
+			}
+
+			20% {
+				background-color: #e0e0e0;
+				transform: scale(.9);
+			}
+
+			40% {
+				background-color: #fff;
+				transform: scale(1);
+			}
+
+			100% {
+				background-color: #fff;
+				transform: scale(1);
+			}
+		}
+
 		@media only screen and (max-device-width: 480px) {
 
 			html {
@@ -216,12 +239,29 @@
 				/*background: #808080;*/
 			}
 
-			#spotify:hover{
-				background-color: #e0e0e0;
+			#instagram:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
 			}
 
-			#instagram:hover{
-				background-color: #e0e0e0;
+			#facebook:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#tiktok:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#twitter:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#spotify:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
 			}
     	}
     </style>
@@ -242,7 +282,7 @@
 		</div>
 
 		<div class="socials_button">
-			<a id="facebook" href="https://www.facebook.com/profile.php?id=100009249489055">Facebook</a>
+			<a id="facebook" href="fb://profile/100009249489055">Facebook</a>
 		</div>
 
 		<div class="socials_button">
@@ -250,11 +290,11 @@
 		</div>
 
 		<div class="socials_button">
-			<a id="twitter" href="https://twitter.com/braaedy4">Twitter</a>
+			<a id="twitter" href="twitter:///user?screen_name=braaedy4">Twitter</a>
 		</div>
 
 		<div class="socials_button">
-			<a id="spotify">Spotify</a>
+			<a id="spotify" href="https://open.spotify.com/user/nciguul4qvkc0nx1bioe8y9zt?si=Hzk1AF2JTfCu0EGUgOqNZA&utm_source=copy-link">Spotify</a>
 		</div>
 		
 	</div>
