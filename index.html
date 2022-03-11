@@ -93,6 +93,24 @@
 			}
 		}
 
+		@keyframes adrien_animation {
+			0% {
+				color: #000;
+			}
+			25% {
+				color: #70D6FF;
+			}
+			50% {
+				color: #FF9770;
+			}
+			75% {
+				color: #FFD670;
+			}
+			100% {
+				color: #000;
+			}
+		}
+
 		@media only screen and (max-device-width: 480px) {
 
 			html {
@@ -126,6 +144,11 @@
 				z-index: -1;
 				animation-duration: 3s;
   				animation-name: appear_name;
+			}
+			#adrien_name:hover{
+				animation-duration: 2s;
+  				animation-name: adrien_animation;
+  				animation-iteration-count: infinite;
 			}
 			#arrow{
 				transform: rotate(-180deg);
@@ -263,13 +286,15 @@
 				animation-duration: 3s;
   				animation-name: button_pressed;
 			}
+
+
     	}
     </style>
 </head>
 <body>
 	<div>
 		<h1 id="greeting">Hi,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-		<h1 id="name">I am Adrien.</h1>
+		<h1 id="name">I am <span id="adrien_name">Adrien</span>.</h1>
 
 		<!-- <h1 id="arrow">^</h1> -->
 		<a id="arrow" href="#page">^</a>
@@ -290,12 +315,13 @@
 		</div>
 
 		<div class="socials_button">
-			<a id="twitter" href="twitter:///user?screen_name=braaedy4">Twitter</a>
+			<a id="twitter" href="https://twitter.com/braaedy4?ref_src=twsrc%5Etfw">Twitter</a>
 		</div>
 
 		<div class="socials_button">
 			<a id="spotify" href="https://open.spotify.com/user/nciguul4qvkc0nx1bioe8y9zt?si=Hzk1AF2JTfCu0EGUgOqNZA&utm_source=copy-link">Spotify</a>
 		</div>
+
 		
 	</div>
 </body>
