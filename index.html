@@ -9,7 +9,62 @@
 		@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+		@keyframes appear_hi {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  40% {
+		    opacity: 0;
+		  }
+
+		  50% {
+		  	opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes appear_name {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  50% {
+		    opacity: 0;
+		  }
+
+		  60% {
+		  	opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes appear_arrow {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  80% {
+		  	opacity: 0;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
 		@media only screen and (max-device-width: 480px) {
+
+			html {
+			  scroll-behavior: smooth;
+			}
+
 			#greeting{
 				font-family: Karla;
 				position: absolute;
@@ -21,6 +76,8 @@
 				width: 100%;
 				top: 40%;
 				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_hi;
 			}
 			#name{
 				font-family: Karla;
@@ -33,6 +90,49 @@
 				width: 100%;
 				top: 45%;
 				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_name;
+			}
+			#arrow{
+				transform: rotate(-180deg);
+				text-decoration: none;
+				font-family: Karla;
+				font-size: 48px;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				top: 0;
+				left: 0;
+				width: 100%;
+				top: 60%;
+				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_arrow;
+			}
+
+			#page{
+				font-family: Karla;
+				position: absolute;
+				color: black;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				top: 100%;
+				z-index: -1;
+			}
+
+			#page_text{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				top: 40%;
+				left: 0;
+				width: 100%;
+				top: 60%;
+				z-index: -1;
 			}
     	}
     </style>
@@ -41,5 +141,11 @@
 	<div>
 		<h1 id="greeting">Hi,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
 		<h1 id="name">I am Adrien.</h1>
+
+		<!-- <h1 id="arrow">^</h1> -->
+		<a id="arrow" href="#page">^</a>
+	</div>
+	<div id="page">
+		<h1 id="page_text">text</h1>
 	</div>
 </body>
