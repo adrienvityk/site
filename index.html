@@ -164,7 +164,7 @@
   				animation-name: adrien_animation;
   				animation-iteration-count: infinite;
 			}
-			#arrow{
+			.arrow{
 				transform: rotate(-180deg);
 				text-decoration: none;
 				font-family: Karla;
@@ -176,10 +176,17 @@
 				top: 0;
 				left: 0;
 				width: 100%;
-				top: 60%;
 				z-index: -1;
 				animation-duration: 3s;
   				animation-name: appear_arrow;
+			}
+
+			#page_arrow{
+				top: 60%;
+			}
+
+			#blog_arrow{
+				top: 90%;
 			}
 
 			#guide{
@@ -218,7 +225,7 @@
 				vertical-align: middle;
 				color: black;
 				font-size: 9vw;
-				top: 58%;
+				top: 48%;
 				left: 0;
 				width: 100%;
 				z-index: -1;
@@ -232,7 +239,7 @@
 				border: solid black;
 				color: black;
 				text-decoration: none;
-				top: 70%;
+				top: 60%;
 				left: 10%;
 				text-align: center;
 				/*background: #808080;*/
@@ -246,7 +253,7 @@
 				font-size: 6vw;
 				color: black;
 				text-decoration: none;
-				top: 70%;
+				top: 60%;
 				right: 10%;
 				text-align: center;
 				/*background: #808080;*/
@@ -260,7 +267,7 @@
 				font-size: 6vw;
 				color: black;
 				text-decoration: none;
-				top: 80%;
+				top: 70%;
 				left: 10%;
 				text-align: center;
 				/*background: #808080;*/
@@ -274,7 +281,7 @@
 				font-size: 6vw;
 				color: black;
 				text-decoration: none;
-				top: 80%;
+				top: 70%;
 				right: 10%;
 				text-align: center;
 				/*background: #808080;*/
@@ -288,7 +295,7 @@
 				font-size: 6vw;
 				color: black;
 				text-decoration: none;
-				top: 90%;
+				top: 80%;
 				left: 10%;
 				text-align: center;
 				/*background: #808080;*/
@@ -302,7 +309,7 @@
 				font-size: 6vw;
 				color: black;
 				text-decoration: none;
-				top: 90%;
+				top: 80%;
 				right: 10%;
 				text-align: center;
 				/*background: #808080;*/
@@ -364,7 +371,29 @@
 				z-index: -1;
 			}
 
+			#blog{
+				font-family: Karla;
+				position: absolute;
+				color: black;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				top: 200%;
+				z-index: -1;
+			}
 
+			#blog_title{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				font-size: 9vw;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+			}
     	}
     </style>
 </head>
@@ -374,7 +403,7 @@
 		<h1 id="name">I am <span id="adrien_name">Adrien</span>.</h1>
 
 		<!-- <h1 id="arrow">^</h1> -->
-		<a id="arrow" href="#page">^</a>
+		<a class="arrow" id="page_arrow" href="#page">^</a>
 
 		<p><a id="guide" href="#page">press the arrow to continue</a></p>
 	</div>
@@ -444,7 +473,17 @@
 			<a id="pinterest" href="https://www.pinterest.com/braaedy4/">Pinterest</a>
 		</div>
 
+		<a class="arrow" id="blog_arrow" href="#blog">^</a>
+		
+	</div>
+	<div id="blog">
+		<h1 id='blog_title'>Blog</h1>
+
+		<h2 style="position: absolute;
+				   top: 40%;
+				   left: 33%;
+				   color: #808080;
+				   ">Coming soon</h2>
 		
 	</div>
 </body>
-
