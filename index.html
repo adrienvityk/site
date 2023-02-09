@@ -190,13 +190,13 @@
   				animation-iteration-count: infinite;
 			}
 
-		.arrow{
+		/*.arrow{
 			display: none;
 		}
 
 		#page_arrow{
 			display: none;
-		}
+		}*/
 
 		#page_text{
 				font-family: Karla;
@@ -211,9 +211,9 @@
 				z-index: -1;
 			}
 
-		#guide{
+		/*#guide{
 			display: none;
-		}
+		}*/
 
 		#instagram{
 				position: absolute;
@@ -342,6 +342,19 @@
 				z-index: -1;
 			}
 
+		@media only screen and (min-device-width: 481px){
+			.arrow{
+				display: none;
+			}
+
+			#page_arrow{
+				display: none;
+			}
+			#guide{
+				display: none;
+			}
+		}
+
 		@media only screen and (max-device-width: 480px) {
 
 			html {
@@ -352,7 +365,7 @@
 				font-family: Karla;
 				position: absolute;
 				text-align: center;
-				font-size: 3vw;
+				font-size: 30px;
 				vertical-align: middle;
 				color: black;
 				top: 0;
@@ -367,7 +380,7 @@
 				font-family: Karla;
 				position: absolute;
 				text-align: center;
-				font-size: 3vw;
+				font-size: 30px;
 				vertical-align: middle;
 				color: black;
 				top: 0;
